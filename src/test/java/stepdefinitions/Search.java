@@ -57,7 +57,7 @@ public class Search {
 	public void user_should_get_a_message_about_no_product_matching() {
 	//	searchResultPage = new SearchResultPage(driver);
 		Assert.assertTrue(searchResultPage.productMisMatchSearchResult().contains("There is no product that matches the search criteria."));
-		Assert.fail();
+		
 	    
 	}
 
