@@ -15,6 +15,9 @@ public class MyHooks {
 
 	@Before
 	public void setup() {
+		
+	System.setProperty("webdriver.chrome.driver", "C:\Windows\System32\config\systemprofile\.cache\selenium\chromedriver\win32\114.0.5735.90\chromedriver.exe");
+        driver = new ChromeDriver();	
 	    driver = DriverFactory.initializeBrowser(ConfigReader.initializeProprties().getProperty("browser"));
 //	    driver = DriverFactory.getDriver();
 	    driver.get(ConfigReader.initializeProprties().getProperty("url"));
